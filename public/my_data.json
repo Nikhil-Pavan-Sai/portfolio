@@ -3,12 +3,15 @@
     "firstName": "Nikhil Pavan Sai",
     "lastName": "Machavaram"
   },
+  "profilePic": "profile.jpg",
   "logo": "favicon.png",
   "backgrounds": {
     "home": "back-1.png",
     "resume": "back-2.jpg"
   },
   "about": {
-    "profession": "Web Developer | Software Engineer"
+    "profession": "Web Developer | Software Engineer",
+    "description": "My name is Nikhil Pavan Sai and I'm a Full Stack Web Developer. I'm a Computer science graduate. I'm currently working as a Full Stack Web Developer at ZeMoSo Technologies PVT. Ltd. Developing cool stuff and playing around with new cutting edge technology is my hobby. I love experimenting.",
+    "hobbies": "Well, apart from computers, I love outdoor sport. I play almost all outdoor games but much fond of Cricket."
   }
 }

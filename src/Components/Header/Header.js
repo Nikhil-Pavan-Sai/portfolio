@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import SmoothScroll from "../../utils/SmoothScroll.js";
 import "./Header.css";
 
 function Header({ logo, name }) {
@@ -51,7 +52,7 @@ function Header({ logo, name }) {
         <h1>{name?.firstName}</h1>
       </a>
       <ul className="nav-links" ref={navLinksRef}>
-        <li>About</li>
+        <li onClick={(e) => SmoothScroll(".about", 1000)}>About</li>
         <li>Skills</li>
         <li>Resume</li>
         <li>Works</li>
