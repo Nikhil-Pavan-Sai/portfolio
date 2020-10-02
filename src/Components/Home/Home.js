@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import SmoothScroll from "../../utils/SmoothScroll.js";
 import "./Home.css";
 
 function Home({ name, background, about }) {
@@ -40,6 +41,7 @@ function Home({ name, background, about }) {
       </div>
       <div
         className="home__caretDown"
+        onClick={(e) => SmoothScroll(".about", 1000)}
       >
         <i className="fas fa-angle-down"></i>
       </div>

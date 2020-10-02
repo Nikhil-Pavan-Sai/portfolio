@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import smoothScroll from "smoothscroll-polyfill";
 import Header from "./Components/Header/Header.js";
 import Home from "./Components/Home/Home.js";
+import About from "./Components/About/About.js";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         background={data.backgrounds}
         about={data.about}
       />
+      <About profilePic={data.profilePic} about={data.about} />
     </div>
   );
 }
