@@ -53,7 +53,7 @@ function Header({ logo, name }) {
       </a>
       <ul className="nav-links" ref={navLinksRef}>
         <li onClick={(e) => SmoothScroll(".about", 1000)}>About</li>
-        <li>Skills</li>
+        <li onClick={(e) => SmoothScroll(".skills", 1000)}>Skills</li>
         <li>Resume</li>
         <li>Works</li>
         <li>Contact</li>

@@ -1,0 +1,57 @@
+.skill {
+  flex: 1 1 5rem;
+  min-height: 5rem;
+  min-width: 5rem;
+  max-width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  transition: all 0.5s ease;
+  position: relative;
+
+  margin: 1.7rem;
+}
+
+.skill > img {
+  height: 5rem;
+  width: 8rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.7s ease;
+}
+
+.skill > img:hover {
+  filter: none;
+}
+
+@media (max-width: 600px) {
+  .skill {
+    flex: 1 1 4.5rem;
+    min-height: 4.5rem;
+    min-width: 4.5rem;
+    max-width: 7rem;
+
+    margin: 1.5rem;
+  }
+
+  .skill > img {
+    height: 4.5rem;
+    width: 7rem;
+  }
+}
+@media (max-width: 500px) {
+  .skill {
+    flex: 1 1 4.5rem;
+    min-height: 4rem;
+    min-width: 4rem;
+    max-width: 6rem;
+
+    margin: 1rem;
+  }
+
+  .skill > img {
+    height: 4rem;
+    width: 6rem;
+  }
+}
