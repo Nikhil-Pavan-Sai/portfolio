@@ -1,0 +1,14 @@
+{
+  "name": {
+    "firstName": "Nikhil Pavan Sai",
+    "lastName": "Machavaram"
+  },
+  "logo": "favicon.png",
+  "backgrounds": {
+    "home": "back-1.png",
+    "resume": "back-2.jpg"
+  },
+  "about": {
+    "profession": "Web Developer | Software Engineer"
+  }
+}
