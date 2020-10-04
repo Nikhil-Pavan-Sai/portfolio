@@ -60,7 +60,7 @@ function Header({ logo, name }) {
             Works
           </a>
         </li>
-        <li>Contact</li>
+        <li onClick={(e) => SmoothScroll(".contact", 1000)}>Contact</li>
       </ul>
       <div
         className="hamburger"

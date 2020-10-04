@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home.js";
 import About from "./Components/About/About.js";
 import Skills from "./Components/AllSkills/Skills.js";
 import Resume from "./Components/Resume/Resume.js";
+import Contact from "./Components/Contact/Contact.js";
 import "./App.css";
 
 function App() {
@@ -24,14 +25,11 @@ function App() {
   return (
     <div className="app">
       <Header logo={data.logo} name={data.name} />
-      <Home
-        name={data.name}
-        background={data.backgrounds}
-        about={data.about}
-      />
+      <Home name={data.name} background={data.backgrounds} about={data.about} />
       <About profilePic={data.profilePic} about={data.about} />
       <Skills skills={data.skills} about={data.about} />
       <Resume resume={data.resume} background={data.backgrounds} />
+      <Contact nameProp={data.name} emailId={data.emailId} about={data.about} />
     </div>
   );
 }
