@@ -55,7 +55,11 @@ function Header({ logo, name }) {
         <li onClick={(e) => SmoothScroll(".about", 1000)}>About</li>
         <li onClick={(e) => SmoothScroll(".skills", 1000)}>Skills</li>
         <li onClick={(e) => SmoothScroll(".resume", 1000)}>Resume</li>
-        <li>Works</li>
+        <li>
+          <a className="works" href="https://github.com/Nikhil-Pavan-Sai">
+            Works
+          </a>
+        </li>
         <li>Contact</li>
       </ul>
       <div
