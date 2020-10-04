@@ -36,6 +36,12 @@
   margin-right: 1rem;
 }
 
+.works {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
