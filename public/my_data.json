@@ -7,7 +7,7 @@
   "logo": "favicon.png",
   "backgrounds": {
     "home": "back-1.png",
-    "resume": "back-2.jpg"
+    "resume": "workspace.jpg"
   },
   "about": {
     "profession": "Web Developer | Software Engineer",
@@ -41,6 +41,8 @@
     "linux",
     "typescript",
     "vagrant",
-    "netlify"
-  ]
+    "netlify",
+    "cypress"
+  ],
+  "resume": "NikhilResume.pdf"
 }

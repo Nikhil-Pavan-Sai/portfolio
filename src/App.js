@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header.js";
 import Home from "./Components/Home/Home.js";
 import About from "./Components/About/About.js";
 import Skills from "./Components/AllSkills/Skills.js";
+import Resume from "./Components/Resume/Resume.js";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       />
       <About profilePic={data.profilePic} about={data.about} />
       <Skills skills={data.skills} about={data.about} />
+      <Resume resume={data.resume} background={data.backgrounds} />
     </div>
   );
 }
