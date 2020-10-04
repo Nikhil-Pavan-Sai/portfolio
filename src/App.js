@@ -6,6 +6,7 @@ import About from "./Components/About/About.js";
 import Skills from "./Components/AllSkills/Skills.js";
 import Resume from "./Components/Resume/Resume.js";
 import Contact from "./Components/Contact/Contact.js";
+import Footer from "./Components/Footer/Footer.js";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Skills skills={data.skills} about={data.about} />
       <Resume resume={data.resume} background={data.backgrounds} />
       <Contact nameProp={data.name} emailId={data.emailId} about={data.about} />
+      <Footer social={data.social} />
     </div>
   );
 }
