@@ -12,6 +12,7 @@
     "emailjs-com": "^2.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-download-link": "^2.3.0",
     "react-scripts": "3.4.3",
     "smoothscroll-polyfill": "^0.4.4"
   },
