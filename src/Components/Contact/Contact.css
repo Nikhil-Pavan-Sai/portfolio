@@ -98,6 +98,11 @@
 .form__row {
   display: flex;
   margin: 0.5rem 0;
+  width: 80%;
+}
+
+.textfield {
+  background: white;
 }
 
 .form__row label {
