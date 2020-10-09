@@ -4,6 +4,9 @@ import MailingUtil, {
   getWithExpiry,
   setWithExpiry,
 } from "../../utils/Mailing.js";
+import TextField from "@material-ui/core/TextField";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/material.css";
 import validate from "../../utils/Validate.js";
 
 function Contact({ nameProp, emailId, about }) {
@@ -102,77 +105,63 @@ function Contact({ nameProp, emailId, about }) {
         <div className="contact__form">
           <div className="form__top">
             <i className="fas fa-envelope"></i>
-            <div className="form__message">
-              <p></p>
-              <button
-                onClick={(e) =>
-                  e.target.parentNode.classList.remove("message__active")
-                }
-              >
-                X
-              </button>
-            </div>
           </div>
           <form action="" method="post">
             <div className="form__row">
-              <label htmlFor="Name">
-                Name <span>*</span>
-              </label>
-              <input
-                type="text"
-                name="contact__name"
+              <TextField
+                className="textfield"
+                required
                 id="contact__name"
+                label="Name"
+                defaultValue="Name"
+                variant="outlined"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                required
               />
             </div>
             <div className="form__row">
-              <label htmlFor="Email">
-                Email <span>*</span>
-              </label>
-              <input
-                type="email"
-                name="contact__email"
+              <TextField
+                className="textfield"
+                required
                 id="contact__email"
+                label="Email"
+                defaultValue="Email"
+                variant="outlined"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="form__row_phone">
+              <PhoneInput
+                enableSearch
+                inputStyle={{ width: "80%" }}
                 required
-              />
-            </div>
-            <div className="form__row">
-              <label htmlFor="Phone">Phone </label>
-              <input
-                type="tel"
-                name="contact__phone"
-                id="contact__phone"
+                country={"in"}
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhone(e)}
               />
             </div>
             <div className="form__row">
-              <label htmlFor="Subject">Subject </label>
-              <input
-                type="text"
-                name="contact__subject"
+              <TextField
+                className="textfield"
                 id="contact__subject"
+                label="Subject"
+                defaultValue="Subject"
+                variant="outlined"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
               />
             </div>
             <div className="form__row">
-              <label htmlFor="Message">
-                Message <span>*</span>
-              </label>
-              <textarea
-                name="contact__message"
-                id="contact__message"
-                cols="30"
-                rows="10"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+              <TextField
                 required
-              ></textarea>
+                className="textfield"
+                id="contact__message"
+                label="Message"
+                multiline
+                rows={6}
+                variant="outlined"
+              />
             </div>
             <button
               onClick={sendResponseHandler}
@@ -187,7 +176,9 @@ function Contact({ nameProp, emailId, about }) {
           <div className="email__container">
             <i className="far fa-paper-plane"></i>
             <h2 className="section__header">Get in touch by sending mail!</h2>
-            <a className="email email-primary" href={`mailto:${emailId}`}>Say hello</a>
+            <a className="email email-primary" href={`mailto:${emailId}`}>
+              Say hello
+            </a>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import DownloadLink from "react-download-link";
 import "./Resume.css";
 
 function Resume({ resume, background }) {
@@ -35,11 +34,9 @@ function Resume({ resume, background }) {
       <div className="resume__container">
         <h1 className="section__header">Check out my resume</h1>
         <div className="resume__copy">
-          <DownloadLink
-            style={{ color: "white" }}
-            label="Grab a copy of my resume"
-            filename={resume}
-          />
+          <a href={resume} target="blank">
+            Grab a copy of my resume
+          </a>
         </div>
       </div>
     </div>
